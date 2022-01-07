@@ -17,20 +17,17 @@ bot.on('ready', () => console.log(`Logged in as ${bot.user.tag}.`));
 var gonbcount = 0;
 bot.on('message', async message => {
   // Check for command
-  if (message.content.startsWith(config.prefix)) {
-    let args = message.content.slice(config.prefix.length).split(' ');
-    let command = args.shift().toLowerCase();
-
-    switch (command) {
+  if (message.content.startsWith('gonb')) {
+    
 
 
-      case 'gonb':
+
+  
         gonbcount++;
         message.channel.send("Gonb #"+gonbcount);
-        break;
+        
 
-
-    }
+    
   }
 });
 
