@@ -1,4 +1,4 @@
 module.exports = {
-  prefix: '',
+  prefix: 'gc!',
   token: process.env.TOKEN
 };
