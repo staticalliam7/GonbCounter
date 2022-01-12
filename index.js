@@ -30,6 +30,7 @@ bot.on('message', async message => {
         if(message.author.bot){}
         else{
         gonbcount++;
+        bot.user.setPresence({status: 'online', activity: { name: 'Current Gonb Count: '+ gonbcount, type: 'WATCHING'}})
     fs.writeFile("./gonbPersistent.txt", gonbcount, (err) => {
       if (err) console.log(err);
       console.log("Successfully Written to File.");
