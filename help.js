@@ -7,9 +7,16 @@ module.exports = {
     description: 'Checks connectivity with discord\'s servers.',
     format: 'ping'
   },
-  'say': {
-    aliases: ['repeat'],
-    description: 'Repeats whatever is said.',
-    format: 'say <message>'
-  }
+  'count': {
+    description: 'Sends an up to date count of global gonbs',
+    format: 'count'
+  },
+ 'invite':{
+     description: "Sends an invite link to GonbCounter",
+     format: 'invite'
+ },
+ 'info':{
+     description: "Info about GonbCounter",
+     format: 'info'
+ }
 }
